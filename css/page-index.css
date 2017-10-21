@@ -1,0 +1,268 @@
+body{
+	background: url(../img/polo360.png) repeat-x;
+}
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*解决高度塌陷*/
+.clearfix:after,
+.clearfix:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.header{
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+.log{
+	margin-left: 15px;
+}
+/*设置导航条*/
+.nav{
+	float: right;
+	margin-top:22px;
+}
+.nav li{
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px dashed #d6d6d6;
+}
+.nav a{
+	font-size: 14px;
+	font-family:  georgia;
+	font-weight: bold;
+	color: #666;
+	text-decoration: none;
+}
+.nav a:hover{
+	color: #c4c1c1;
+}
+.nav p{
+	color:#b7b7b7;
+	font-size:12px;
+	font-family: tahoma;
+}
+/*设置banner*/
+.banner{
+	height: 356px;
+	background-image: url(../img/banner02.png) ;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.pointerDiv{
+	position: absolute;
+	left:15px;
+	top:314px;
+}
+.pointerDiv a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-left: 5px;
+	background-image: url(../img/pointer01.png);
+}
+.pointerDiv .active,
+.pointerDiv a:hover{
+	background-image: url(../img/pointer02.png);
+}
+/*设置content部分*/
+.content{
+	background-image: url(../img/h1showd.png);
+	background-repeat: no-repeat;
+	background-position: bottom center; 
+/*	background-color: red;*/
+
+}
+.content h1{
+	text-align: center;
+	font:24px georgia bold;
+	padding-top: 6px;
+	padding-bottom: 22px;
+	margin-bottom: 38px;
+	background: url(../img/h1showd.png) no-repeat center bottom;
+}
+
+.content .pl , .content .cs , .content .uc{
+	width: 300px;
+	/*浮动会导致content高度塌陷*/
+	float: left;
+}
+.content .cs{
+	margin: 0px 20px;
+}
+.content h2{
+	color: #11719e;
+	font:21px georgia;
+}
+.content .p1{
+	font:Helvetica  #8c8c8c;
+	font-size: 12px;
+} 
+.content .img-div{
+	width: 299px;
+	height: 186px;
+	padding-top: 12px;
+	background-image: url(../img/content-Img-Bj.png) ;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 20px 0px 15px 0px;
+}
+.content .p2{
+	height: 80px;
+	font-size: 13px;
+	font: Helvetica #3e3e3e;
+	word-spacing: 2px;
+}
+
+.content a{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background-image: url(../img/content-a-BJ.png);
+	text-decoration: none;
+	font: Helvetica #016999 ;
+	font-size: 12px;
+	line-height: 40px;
+	/*设置文字的缩进*/
+	text-indent: 1em;
+	margin: 0px 0 33px 8px;
+}
+
+/*设置contact*/
+.contact{
+	margin-top: 40px;
+	height: 400px;
+	position: relative;
+}
+.contact .sc,.contact .c,.contact .nu{
+	width: 300px;
+	height: 100px;
+	float: left;
+}
+.contact .c{
+	margin: 0 20px;
+}
+.contact h2{
+	padding-bottom: 10px;
+	padding-left: 5px;
+	background:url(../img/contact-line.png) no-repeat bottom center;
+}
+.contact .sc p{
+	color: #444;
+	font:Helvetica 12px/1;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.contact .sc a{
+	position: absolute;
+	top: 346px
+}
+.contact .sc-img{
+	width: 304px;
+	height: 56px;
+	margin-bottom: 20px;
+}
+.contact .sc-img li{
+	width: 54px;
+	height: 56px;
+	display: block;
+	float: left;
+	margin: 0 3px;
+}
+.contact .input-text,.contact .text-name,.contact .text-address{
+	width: 296px;
+	height: 33px;
+	color: #d4d4d4;
+	font: Verdana 10px;
+	margin: 10px 0;
+	text-indent: 1em;
+}
+.contact input{
+	background: url(../img/input-bj.png) no-repeat ;
+	/*去除表单的默认边框*/
+	border: none;
+}
+.contact a{
+	width: 163px;
+	height: 32px;
+	display: block;
+	line-height: 32px;
+	margin:12px 0 20px 5px;
+	text-indent: 1em;
+	font:Georgia 13 px;
+	color: white;
+	text-decoration: none;
+	background:url(../img/contact-sc-btn.png) no-repeat;
+}
+.contact .text-name ,.contact .text-address{
+	margin:19px 0 19px 5px; 
+}
+.contact .c a{
+	position: absolute;
+	top: 346px
+}
+.contact .textarea{
+	width: 296px;
+	height: 160px;
+	margin-left: 5px;
+	color: #d4d4d4;
+	font: Verdana 10px;
+	text-indent: 1em;
+	margin-top: 14px;
+	background: url(../img/textarea-bj.png) no-repeat;
+	border:none;
+	/*设置文本区域不能调整大小*/
+	resize: none;
+	/*隐藏滚动条*/
+	overflow: auto;
+}
+/*设置练习栏右侧*/
+.contact .nu img{
+	float: left;
+	margin-right: 8px;
+}
+.contact .nu p{
+	color: #444;
+	height: 60px;
+	font: Helvetica 12px/1;
+	margin-top: 15px;
+	padding-bottom: 22px;
+	background: url(../img/contact-line.png) no-repeat center bottom;
+}
+.contact .nu a{
+	position: absolute;
+	top: 346px
+
+}
+/*底部*/
+.footer{
+	height: 184px;
+	margin-top: 10px;
+	background: url(../img/footer-bj.png) repeat-x;
+	position: relative;
+}
+.foot-left{
+	position: absolute;
+	left: 200px;
+	margin-top: 27px;
+	margin-left: 10px;
+}
+.foot-left p,.foot-left a{
+	font:Helvetica 12px;
+	color: #999;
+	margin-bottom: 15px;
+}
+.foot-left a{
+	text-decoration: none;
+}
+.footer .p1{
+	font:Helvetica 12px;
+	color: #999;
+	position: absolute;
+	left: 840px;
+	top: 27px;
+}
